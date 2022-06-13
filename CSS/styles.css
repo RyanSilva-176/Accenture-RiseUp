@@ -1,0 +1,53 @@
+body::before {
+  display: block;
+  content: " ";
+  height: 60px;
+}
+
+@media (min-width: 768px) {
+  .news-input {
+    width: 50%;
+  }
+  .slide-img {
+    height: 50%;
+  }
+}
+
+#logo-font {
+  font-size: 29.26px;
+  font-family: "Fredoka One";
+}
+
+#btn-login {
+  width: 100px;
+}
+
+/* Carousel */
+
+.carousel-item {
+  max-height: 32rem;
+  background-size: cover;
+  background-position: center;
+}
+
+.carousel-item::before{
+  content: " ";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: #000;
+  opacity: 0.7;
+}
+
+.carousel-caption{
+  bottom: 80px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.slider-btn{
+  margin-top: 30px;
+}
+
