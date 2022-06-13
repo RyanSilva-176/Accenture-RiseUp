@@ -1,1 +1,1 @@
-Bem Vindo ao RiseUp Planes
+Bem Vindo ao RiseUp Planes, sua plataforma de viagens mais acessível!
