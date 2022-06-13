@@ -8,11 +8,9 @@ body::before {
   .news-input {
     width: 50%;
   }
-  .slide-img {
-    height: 50%;
-  }
 }
 
+/* Navbar */
 #logo-font {
   font-size: 29.26px;
   font-family: "Fredoka One";
@@ -23,7 +21,6 @@ body::before {
 }
 
 /* Carousel */
-
 .carousel-item {
   max-height: 32rem;
   background-size: cover;
