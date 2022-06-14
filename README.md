@@ -56,13 +56,7 @@ Um bom meio de utilizar o html semãntico é com explicações mais didaticas, e
 
 
 Em Desgin e na questão de navegação de um site é importante ver alguns conceitos em alguns sites como por exemplo o https://getbootstrap.com/docs/5.2/getting-started/introduction
-
-
-
-
-
-
- A maioria das paginas brasileiras não respeitam nem o básico de acessibilidade para deficientes visuais, então apenas fazendo coisas simples citadas acima se torna importante e necessário, e talvez assim, com esses aspectros de front-end conseguiremos fazer a mudança para que isso se torne uma pratica comum.
+A maioria das paginas brasileiras não respeitam nem o básico de acessibilidade para deficientes visuais, então apenas fazendo coisas simples citadas acima se torna importante e necessário, e talvez assim, com esses aspectros de front-end conseguiremos fazer a mudança para que isso se torne uma pratica comum.
 
 
 
