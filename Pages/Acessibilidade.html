@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="/CSS/styles.css">
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet" />
+    <!-- Icon Page -->
+    <link rel="icon" type="image/png" href="/img/Airplane.png" />
+    <title>Acessibilidade</title>
+
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <script>
+        $(function () {
+            $("#header").load("header.html");
+            $("#footer").load("footer.html");
+        });
+    </script>
+
+</head>
+
+<body>
+    <!-- Navbar -->
+    <div id="header"></div>
+
+    <!-- Showcase -->
+    <section class="bg-dark text-light p-5 pg-lg-0 pt-lg-5 text-center text-sm-start">
+        <div class="container">
+            <div class="d-sm-flex d-inline-flex align-items-center justify-content-center">
+                <div>
+                    <h1>Programa mais <span class="text-warning">Acessibilidade</span></h1>
+                    <p class="lead my-4 text-sm" style="text-align:justify">
+                        Trazendo um site com recursos de acessibilidade, seguindo as recomendações do W3C, principal
+                        organização de padronização da World Wide Web, que desenvolve especificações técnicas e
+                        orientações para o mercado. Com isso, pessoas com deficiência visual, baixa visão daltonismo e
+                        fotossensível conseguem navegar em nosso site por meio de recursos que foram implementados para
+                        garantir este acesso, tais como alto contraste, teclas de atalho e navegação por teclado e botão
+                        de tamanho de fonte.
+                    </p>
+                </div>
+                <img class="img-fluid w-50 d-none d-sm-block" src="#" alt="" />
+            </div>
+        </div>
+    </section>
+
+    <!-- Boxes -->
+    <section class="p-5">
+        <div class="container">
+            <div class="row text-center g-4">
+                <h2>Qual a sua necessidade?</h2>
+                <div class="col-md">
+                    <div class="card bg-dark text-light">
+                        <div class="card-body text-center">
+                            <div class="h1 mb-3">
+                                <i class="bi bi-eyeglasses"></i>
+                            </div>
+                            <h4 class="card-title mb-3">Baixa visão</h4>
+                            <p class="card-text" style="text-align:justify">
+                                Para pessoas com baixa visão temos ferramentas de acessibilidade em que é possível
+                                alterar o tamanho da fonte, aperte Tab para alcançar os botões de tamanho de fonte.
+                                Neste contexto a Internet tem um papel crucial a desempenhar. Ela tem o potencial
+                                de “quebrar” barreiras físicas e espaciais, servindo de suporte a um grande número de
+                                atividades
+                                possíveis de serem realizadas por portadores de deficiência.
+                            </p>
+                            <br>
+                            <a name="increase-font" id="increase-font" class="btn btn-primary"
+                                title="Aumentar globalmente o tamanho das fontes">A+</a>
+                            <a name="decrease-font" id="decrease-font" class="btn btn-danger"
+                                title="Diminuir globalmente o tamanho das fontes">A -</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="card bg-secondary text-light">
+                        <div class="card-body text-center">
+                            <div class="h1 mb-3">
+                                <i class="bi bi-rainbow"></i>
+                            </div>
+                            <h4 class="card-title mb-3">Fotossensível</h4>
+                            <p class="card-text" style="text-align:justify">
+                                Para pessoas com fotossensibilidade visual ou com certo nível de daltonismo temos
+                                ferramentas de acessibilidade de contraste de cores, deixando o tema mais escuro ou mais
+                                claro, com o botão contraste logo abaixo.
+                            </p>
+                            <a name="change-color" id="change-color" class="btn btn-primary"
+                                title="Ativar o contraste do site" onclick="changeColor()">
+                                Contraste
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="card bg-dark text-light">
+                        <div class="card-body text-center">
+                            <div class="h1 mb-3">
+                                <i class="bi bi-eye-slash"></i>
+                            </div>
+                            <h4 class="card-title mb-3">Leitor de tela</h4>
+                            <p class="card-text" style="text-align:justify">
+                                Para pessoas que não conseguem enxergar temos um site organizado de maneira em que seja
+                                possivel navegar por todos os sites apenas com a utilização de um software de leitor de
+                                tela, recomendamos o uso do <abbr title="NonVisual Desktop Access">NVDA</abbr>
+                                encontrado no link a seguir.
+                            </p>
+                            <a href="https://www.nvaccess.org/download/" target="_blank" class="btn btn-primary"
+                                title="Abrir página de download do NVDA">NVDA</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Question Accordion -->
+    <section id="questions" class="p-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Perguntas frequentes</h2>
+
+            <div class="accordion accordion-flush" id="questions">
+                <!-- Item 1 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#question-one">
+                            Como posso aumentar ou diminuir a fonte?
+                        </button>
+                    </h2>
+                    <div id="question-one" class="accordion-collapse collapse" data-bs-parent="#questions">
+                        <div class="accordion-body">
+                            Basta clicar nos botões de aumento ou diminuição, mas lembre-se que a alteração da fonte
+                            ficará salva no cache do navegador.
+                        </div>
+                    </div>
+                </div>
+                <!-- Item 2 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#question-two">
+                            Quando usar o contraste?
+                        </button>
+                    </h2>
+                    <div id="question-two" class="accordion-collapse collapse" data-bs-parent="#questions">
+                        <div class="accordion-body">
+                            Nós sugerimos que utilize o contraste caso você tenha algum dificuldade para cores mais
+                            claras, ou que tenha dificuldade para ler os textos da página.
+                        </div>
+                    </div>
+                </div>
+                <!-- Item 3 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#question-three">
+                            É seguro usar o NVDA?
+                        </button>
+                    </h2>
+                    <div id="question-three" class="accordion-collapse collapse" data-bs-parent="#questions">
+                        <div class="accordion-body">
+                            O <abbr title="NonVisual Desktop Access">NVDA</abbr> é um dos leitores de tela mais
+                            utilizado no mundo, o que
+                            resulta em uma imensa comunidade de usuários utilizano-o.
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <div id="footer"></div>
+
+    <!-- My Js -->
+    <script type="text/javascript" src="/js/cookie.js"></script>
+    <script type="text/javascript" src="/js/Scriptexterno.js"></script>
+
+    <!-- Bootstrap Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

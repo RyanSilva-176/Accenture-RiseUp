@@ -16,43 +16,20 @@
     <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet" />
     <!-- Icon Page -->
     <link rel="icon" type="image/png" href="img/Airplane.png" />
+    <!-- Importing Header & Footer -->
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <script>
+        $(function () {
+            $("#header").load("/Pages/header.html");
+            $("#footer").load("/Pages/footer.html");
+        });
+    </script>
     <title>RiseUp</title>
 </head>
 
 <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 fixed-top">
-        <div class="container">
-            <a href="#" id="logo-font" class="navbar-brand">RiseUp</a>
-
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navmenu">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a href="#Acessibilidade" class="nav-link">Acessibilidade</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#Comprar passagem" class="nav-link">Comprar passagem</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#Check-in" class="nav-link">Check-in</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#Status de voo" class="nav-link">Status de voo</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#Atendimento" class="nav-link">Atendimento</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#login" id="btn-login" class="nav-link btn btn-primary">Login</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+    <div id="header"></div>
 
     <!-- Showcase -->
     <section class="bg-dark text-light p-5 pg-lg-0 pt-lg-5 text-center text-sm-start">
@@ -67,7 +44,7 @@
                     <button class="btn-primary btn-lg" data-bs-toggle="modal"
                         data-bs-target="#enroll">Cadastre-se</button>
                 </div>
-                <img class="img-fluid w-50 d-none d-sm-block" src="img/showcase.svg" alt="" />
+                <img class="img-fluid w-50 d-none d-sm-block" src="#" alt="" />
             </div>
         </div>
     </section>
@@ -86,8 +63,8 @@
             <div class="carousel-item active">
                 <img src="img/slide1.jpg" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
-                    <h1>First slide label</h1>
-                    <p>Some representative placeholder content for the first slide.</p>
+                    <h1>Viagens Interestaduais</h1>
+                    <p>Encontre passagens para todos os estados brasileiros</p>
                     <div class="slider-btn">
                         <button class="btn btn-lg btn-primary">Comprar passagem</button>
                     </div>
@@ -96,8 +73,8 @@
             <div class="carousel-item">
                 <img src="img/slide2.jpg" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
-                    <h1>Second slide label</h1>
-                    <p>Some representative placeholder content for the second slide.</p>
+                    <h1>Conheça novos lugares</h1>
+                    <p>Descubra lugares desconhecidos</p>
                     <div class="slider-btn">
                         <button class="btn btn-lg btn-primary">Comprar passagem</button>
                     </div>
@@ -106,8 +83,8 @@
             <div class="carousel-item">
                 <img src="img/slide3.jpg" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
-                    <h1>Third slide label</h1>
-                    <p>Some representative placeholder content for the third slide.</p>
+                    <h1>Viagem com tranquilidade</h1>
+                    <p>Viagem em segurança e sem problemas</p>
                     <div class="slider-btn">
                         <button class="btn btn-lg btn-primary">Comprar passagem</button>
                     </div>
@@ -135,11 +112,11 @@
                 </div>
                 <div class="col-md p-5">
                     <h2>Programa mais Acessibilidade</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum architecto ut quibusdam
-                        accusantium hic laudantium?</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi quos qui, exercitationem porro
-                        perferendis labore illo? Eligendi, placeat eum. Saepe?</p>
-                    <a href="#" class="btn btn-secondary mt-3">
+                    <p>Vivemos na sociedade da informação. Um dos fatores críticos para o sucesso nesta
+                        sociedade é o acesso e utilização das tecnologias de informação e comunicação. Estas tecnologias
+                        devem portanto estar disponíveis ao maior número possível de cidadãos evitando-se assim a
+                        exclusão social. </p>
+                    <a href="/Pages/Acessibilidade.html" class="btn btn-secondary mt-3">
                         <i class="bi bi-chevron-right"></i>Ler mais
                     </a>
                 </div>
@@ -237,16 +214,7 @@
     </section>
 
     <!-- Footer -->
-    <footer class="p-5 bg-dark text-light text-center position-relative">
-        <div class="container">
-            <div class="row">
-                <p class="col-md lead">Copyright &copy; 2022 Ryan Silva</p>
-                <a href="#" class="col-md position-absolute bottom-0 end-0 mb-1">
-                    <i class="bi bi-arrow-up-circle h1"></i>
-                </a>
-            </div>
-        </div>
-    </footer>
+    <div id="footer"></div>
 
     <!-- Bootstrap Bundle -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
