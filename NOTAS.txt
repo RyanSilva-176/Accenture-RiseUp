@@ -10,16 +10,16 @@ Correção das Imagens
 
 # Adicionada a página de Acessibilidade
 # Adcionado os botões de Acessibilidade
-# Textos atribuidos para as 
+# Textos atribuidos para as
 
 
-- Texto plagiado de: http://www.mpgo.mp.br/portalweb/hp/41/docs/acessibilidade_na_internet_para_deficientes_visuais.pdf#:~:text=A%20acessibilidade%20na%20Internet%20caracteriza-se%20pela%20flexibilidade%20da,e%20situa%C3%A7%C3%B5es%20atrav%C3%A9s%20de%20v%C3%A1rios%20equipamentos%20ou%20navegadores. - 
+- Texto plagiado de: http://www.mpgo.mp.br/portalweb/hp/41/docs/acessibilidade_na_internet_para_deficientes_visuais.pdf#:~:text=A%20acessibilidade%20na%20Internet%20caracteriza-se%20pela%20flexibilidade%20da,e%20situa%C3%A7%C3%B5es%20atrav%C3%A9s%20de%20v%C3%A1rios%20equipamentos%20ou%20navegadores. -
 
 1.Introdução:
 Vivemos na sociedade da informação. Um dos fatores críticos para o sucesso nesta
 sociedade é o acesso e utilização das tecnologias de informação e comunicação. Estas tecnologias
 devem portanto estar disponíveis ao maior número possível de cidadãos evitando-se assim a
-exclusão social. 
+exclusão social.
 Neste contexto a Internet tem um papel crucial a desempenhar. Ela tem o potencial
 de “quebrar” barreiras físicas e espaciais, servindo de suporte a um grande número de atividades
 possíveis de serem realizadas por portadores de deficiência.
@@ -31,3 +31,7 @@ possíveis de serem realizadas por portadores de deficiência.
 14/06/2022 - 13:21
 
 # Correção do caminho da página Acessibilidade
+
+15/06/2022 - 21:40
+
+# Add Page comprarpassagem
