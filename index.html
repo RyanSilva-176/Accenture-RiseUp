@@ -16,20 +16,43 @@
   <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet" />
   <!-- Icon Page -->
   <link rel="icon" type="image/png" href="./img/Airplane.png" />
-  <!-- Importing Header & Footer -->
-  <script src="//code.jquery.com/jquery-1.10.2.js"></script>
-  <script>
-    $(function () {
-      $("#header").load("./header.html");
-      $("#footer").load("./footer.html");
-    });
-  </script>
   <title>RiseUp</title>
 </head>
 
 <body>
   <!-- Navbar -->
-  <div id="header"></div>
+  <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 fixed-top">
+    <div class="container">
+      <a href="./index.html" id="logo-font" class="navbar-brand">RiseUp</a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navmenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a href="./acessibilidade.html" class="nav-link">Acessibilidade</a>
+          </li>
+          <li class="nav-item">
+            <a href="./comprarpassagem.html" class="nav-link">Comprar passagem</a>
+          </li>
+          <li class="nav-item">
+            <a href="#Check-in" class="nav-link">Check-in</a>
+          </li>
+          <li class="nav-item">
+            <a href="#Status de voo" class="nav-link">Status de voo</a>
+          </li>
+          <li class="nav-item">
+            <a href="#Atendimento" class="nav-link">Atendimento</a>
+          </li>
+          <li class="nav-item">
+            <a href="#login" id="btn-login" class="nav-link btn btn-primary">Login</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
   <!-- Showcase -->
   <section class="bg-dark text-light p-5 pg-lg-0 pt-lg-5 text-center text-sm-start">
@@ -41,7 +64,7 @@
             A RiseUp planes está disposta a mostrar como que modificações simples podem mudar toda uma
             experiência de um usuário.
           </p>
-          <button class="btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#enroll">Cadastre-se</button>
+          <a href="/" class="btn btn-primary btn-lg text-none">Cadastre-se</a>
         </div>
         <img class="img-fluid w-50 d-none d-sm-block" src="#" alt="" />
       </div>
@@ -174,7 +197,7 @@
             <div class="accordion-body">
               Nós sugerimos que utilize o leitor de tela open source <a href="https://www.nvaccess.org/download/"
                 target="_blank"><abbr title="NonVisual
-                                Desktop Access">NVDA</abbr></a> (NonVisual
+              Desktop Access">NVDA</abbr></a> (NonVisual
               Desktop Access).
             </div>
           </div>
@@ -211,7 +234,16 @@
   </section>
 
   <!-- Footer -->
-  <div id="footer"></div>
+  <footer class="p-5 bg-dark text-light text-center position-relative">
+    <div class="container">
+      <div class="row">
+        <p class="col-md lead">Copyright &copy; 2022 Ryan Silva</p>
+        <a href="#" class="col-md position-absolute bottom-0 end-0 mb-3" title="Voltar para o topo">
+          <i class="bi bi-arrow-up-circle h1"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
 
   <!-- My Js -->
   <script type="text/javascript" src="./js/cookie.js"></script>
